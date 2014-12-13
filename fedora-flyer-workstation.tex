@@ -15,7 +15,6 @@
 %%debug,
 %%nospecialtricks,
 %%draft,
-a4paper,
 10pt
 ]{leaflet}
 
@@ -25,9 +24,8 @@ a4paper,
 
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
+% Use this to change the paper format
 \usepackage{fancyhdr}
-\usepackage{shortvrb}
-\MakeShortVerb{\|}
 \usepackage{graphicx}
 %%\usepackage[default]{cantarell} %% Use option ``defaultsans'' to use cantarell as sans serif only
 \usepackage[default]{comfortaa} %% looks better
@@ -36,6 +34,8 @@ a4paper,
 \definecolor{FedoraBlue}{cmyk}{1,0.46,0,0}
 \definecolor{LIGHTGRAY}{gray}{.9}
 \usepackage[colorlinks=true,urlcolor=FedoraBlue]{hyperref}
+
+%%\setlength\footskip{2cm}
 
 \newcommand*\defaultmarker{\textsuperscript\textasteriskcentered}
 
@@ -64,16 +64,9 @@ a4paper,
 \begin{document}
 
 \maketitle
-\thispagestyle{fancy}
-% Remove the horizontal line that fancyhdr puts in
-\renewcommand{\headrulewidth}{0pt}
-
- % Clear the header and footer before we add our own
-\fancyfoot{}
-\fancyhead{}
-
-%% TODO: Move this a little further up
-\fancyfoot[C]{\small{Fedora and the Infinity Logo are\\registered trademarks of Red Hat, Inc.}}
+\thispagestyle{empty}
+\vspace{6cm}
+\begin{center}\small{Fedora and the Infinity Logo are\\registered trademarks of Red Hat, Inc.}\end{center}
 
 \newpage
 
