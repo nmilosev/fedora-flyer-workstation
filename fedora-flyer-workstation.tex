@@ -15,7 +15,8 @@
 %%debug,
 %%nospecialtricks,
 %%draft,
-a4paper
+a4paper,
+10pt
 ]{leaflet}
 
 
@@ -27,7 +28,6 @@ a4paper
 \usepackage{fancyhdr}
 \usepackage{shortvrb}
 \MakeShortVerb{\|}
-\usepackage{url}
 \usepackage{graphicx}
 %%\usepackage[default]{cantarell} %% Use option ``defaultsans'' to use cantarell as sans serif only
 \usepackage[default]{comfortaa} %% looks better
@@ -35,13 +35,14 @@ a4paper
 \usepackage[dvipsnames,usenames]{color}
 \definecolor{FedoraBlue}{cmyk}{1,0.46,0,0}
 \definecolor{LIGHTGRAY}{gray}{.9}
+\usepackage[colorlinks=true,urlcolor=FedoraBlue]{hyperref}
 
 \newcommand*\defaultmarker{\textsuperscript\textasteriskcentered}
 
 %%\title{Fedora workstation}
 \title{\includegraphics[keepaspectratio,width=0.8\textwidth]{Logo_fedoralogo.png}\vspace{1cm}\\Workstation}
-\date{\Large{\textcolor{FedoraBlue}{http://fedoraproject.org}}}
-\author{marketing@lists.fedoraproject.org}
+\date{\Large{\textcolor{FedoraBlue}{\href{http://fedoraproject.org}{http://fedoraproject.org}}}}
+\author{\href{mailto:marketing@lists.fedoraproject.org}{marketing@lists.fedoraproject.org}}
 
 \CutLine*{1}% Dotted line without scissors
 %%\CutLine{6}%  Dotted line with scissors
@@ -128,5 +129,34 @@ This Fedora Workstation release is not the end. It's the beginning of a new era 
 \end{itemize}
 
 So if you want to be part of the future of the Linux desktop, get on board now!
+\newpage
+
+\begin{center}
+  {\color{FedoraBlue}
+  \LARGE{Fedora Project\vspace{1cm}}
+  \Large{\href{http://fedoraproject.org}{http://fedoraproject.org}}
+}
+\end{center}
+
+\section{\textcolor{FedoraBlue}{Getting Support}}
+\subsection{Fedora project wiki and mailing lists}
+\href{https://fedoraproject.org/wiki/Communicate}{https://fedoraproject.org/wiki/Communicate}
+
+\subsection{Official Documentation}
+\href{http://docs.fedoraproject.org}{http://docs.fedoraproject.org}
+
+\subsection{IRC Channel}
+\href{http://webchat.freenode.net/?channels=#fedora}{\#fedora @ irc.freenode.net}
+
+\subsection{Community forums}
+\href{http://ask.fedoraproject.org}{http://ask.fedoraproject.org}
+\href{http://fedoraforum.org}{http://fedoraforum.org}
+
+
+\section{\textcolor{FedoraBlue}{Looking to join the Fedora community?}}
+Are you interested in contributing to Fedora? There are many ways you can become active in the project.  Whether you are a People Person, Designer, OS Developer, Packager or Administrator - we have a place for you. Just head to the following page and get started today!
+
+\begin{center}\href{http://join.fedoraproject.org}{http://join.fedoraproject.org}\end{center}
+
 
 \end{document}
