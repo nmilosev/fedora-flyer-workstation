@@ -27,6 +27,7 @@
 % Use this to change the paper format
 \usepackage{fancyhdr}
 \usepackage{graphicx}
+\usepackage[none]{hyphenat}
 
 %%\usepackage[default]{cantarell} %% Use option ``defaultsans'' to use cantarell as sans serif only
 %%\usepackage[default]{comfortaa} %% looks better
@@ -105,7 +106,15 @@ Wayland is a new and exciting display server technology that will power Linux de
 \begin{figure}[h]
   \includegraphics[keepaspectratio,width=\textwidth]{Fedora_devassistant-cropped.png}
 \end{figure}
-We recognize developers need an easy and straightforward way to set up many different programming environments. In Fedora Workstation, we offer the DevAssistant developer helper, which takes care of this setup for a large number of language runtimes and IDEs.
+We recognize developers need an easy and straightforward way to set up many different programming environments. In Fedora Workstation, we offer the DevAssistant developer helper, which takes care of this setup for a large number of language runtimes and IDEs. DevAssistant boasts many features like:
+\begin{itemize}
+  \item both a GUI and command line interface
+  \item support for C, C++, Java, Perl, PHP, Python, Ruby on Rails and more.
+  \item dependency installer
+  \item integration with GitHub
+  \item \ldots and more
+\end{itemize}
+
 
 \section{\textcolor{FedoraBlue}{Ease of installation}}
 \begin{figure}[h]
@@ -114,7 +123,7 @@ We recognize developers need an easy and straightforward way to set up many diff
 We want the installation of the Fedora Workstation to be as straightforward and simple as possible. In Fedora Workstation we've distilled this process down to selecting the layout of your physical media, and then pressing ``Install.'' (In fact, you can even let the installer choose the disk layout for you.) And because the future of installations is not optical disks, we ship with an easy to use tool to help you create bootable USB sticks -- just download a new Live image, right-click, and write to USB.
 
 \section{\textcolor{FedoraBlue}{Web service integration}}
-We recognize you have work to do, and you want to use the tools that let you get it done. That's why we're working to make all your applications in Fedora Workstation look and feel the same. With the ability to run HTML5 web services in a chromeless window, we aim to make your apps feel like a natural extension to your desktop. More integration upgrades are coming in future Fedora Workstation releases.
+We recognize you have work to do, and you want to use the tools that let you get it done. That's why we're working to make all your applications in Fedora Workstation look and feel the same. With the ability to run HTML5 web services in a chromeless window - Epiphany based web applications - we aim to make your apps feel like a natural extension to your desktop. More integration upgrades are coming in future Fedora Workstation releases.
 
 \section{\textcolor{FedoraBlue}{Support for high resolution displays (HiDPI)}}
 Technology never stands still, and as a software developer you are used to using the best technology available. So we've spent a lot of time and effort on supporting the new generation of HiDPI displays found on new hardware like many new ultrabook models, or the Apple Retina display.
