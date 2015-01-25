@@ -13,7 +13,7 @@ This document assumes you're using a [stable version of Fedora](http://getfedora
 For the leaflet, we need to install a couple of other LaTeX packages too:
 
 ```
-    sudo dnf install texlive-{leaflet,fancyhdr,graphics,comfortaa,hyperref,latex-bin-bin}
+    sudo dnf install texlive-{leaflet,fancyhdr,graphics,comfortaa,hyperref,latex-bin-bin,hyphenat,opensans}
 ```
 
 If you need others, you can always use:
