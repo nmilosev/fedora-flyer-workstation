@@ -15,6 +15,7 @@
 %%debug,
 %%nospecialtricks,
 %%draft,
+letterpaper,
 10pt
 ]{leaflet}
 
@@ -51,7 +52,7 @@
 
 %%\title{Fedora workstation}
 \title{\includegraphics[keepaspectratio,width=0.8\textwidth]{Logo_fedoralogo.png}\vspace{1cm}\\\includegraphics[keepaspectratio,scale=0.5]{workstation_logo_only.png}\\\vspace{0.5cm}\LARGE{\textcolor{ResolutionBlue}{WORKSTATION}}}
-\author{\LARGE{\textcolor{ResolutionBlue}{21}}}
+\author{\LARGE{\textcolor{ResolutionBlue}{22}}}
 \date{\href{http://ask.fedoraproject.org}{http://ask.fedoraproject.org}}
 
 \CutLine*{1}% Dotted line without scissors
@@ -64,7 +65,7 @@
 
 %\AddToBackground{5}{%  Background of a small page
 %  \put(0,0){\textcolor{Cerulean}{\rule{\paperwidth}{\paperheight}}}}
-
+%%
 \AddToBackground*{2}{% Background of a large page
   \put(\LenToUnit{.5\paperwidth},\LenToUnit{.5\paperheight}){%
     \makebox(0,0)[c]{%
@@ -85,63 +86,44 @@
 \begin{figure}[h]
   \includegraphics[keepaspectratio,width=\textwidth]{Gnome_software_welcome-cropped.png}
 \end{figure}
-The cornerstone of the Fedora Workstation is the Software installer, which lets you find all kinds of applications quickly and easily. The improvements to the Software installer in Fedora 21 provide a responsive and fast user experience. In addition, Fedora packagers have worked with developers around the world to greatly improve the number of featured applications.
+The cornerstone of the Fedora Workstation is the Software installer, which lets you find all kinds of applications quickly and easily. The application now has more and better data than ever before, and makes it easy for you to find a variety of useful free software. It also helps you install extras such as fonts and media helpers, and even lets you easily update your Fedora workstation!
 
-\section{\textcolor{FedoraBlue}{Improvements to the terminal application}}
+\section{\textcolor{FedoraBlue}{Refined themes}}
+The GNOME Shell and other themes and design are refined and improved. Now you can more easily identify information on the screen, adjust window size and placement, and navigate your files and folders. Improved bridging between desktop environment themes allows applications from other environments like KDE to look and feel more like native applications as they're updated to take advantage of this feature. Standard scrollbars have been replaced by a minimal, overlaid indicator, while a scrollbar trough is shown when needed. This create a cleaner, less distracting view which helps you focus on window content. These ``overlay scrollbars'' are also better suited to mouse scroll wheels and touch pad scrolling.
 
-We want developers to have a great experience, so a strong Terminal application is absolutely important. We've integrated a set of additional features in the Terminal, such as:
-\begin{itemize}
-  \item Support for transparent backgrounds
-  \item Automatic title updates to help you identify different terminals
-  \item A simple toggle for disabling shortcuts in the Terminal
-  \item Search for Terminals by name in the GNOME desktop overview
-\end{itemize}
-
-\section{\textcolor{FedoraBlue}{Experimental Wayland support}}
-Wayland is a new and exciting display server technology that will power Linux desktops of the future. With Fedora Workstation 21 you can visit the future now, and see how well your applications work with Wayland. You can also experiment with making your applications take advantage of Wayland's new capabilities. Much of the core Wayland development comes from Fedora Workstation contributors, so this is your chance to try out Wayland straight from the source.
-
-
-
-\section{\textcolor{FedoraBlue}{DevAssistant}}
+\section{\textcolor{FedoraBlue}{Better notifications}}
 \begin{figure}[h]
-  \includegraphics[keepaspectratio,width=\textwidth]{Fedora_devassistant-cropped.png}
+  \includegraphics[keepaspectratio,width=\textwidth]{notifications-f22-cropped.png}
 \end{figure}
-We recognize developers need an easy and straightforward way to set up many different programming environments. In Fedora Workstation, we offer the DevAssistant developer helper, which takes care of this setup for a large number of language runtimes and IDEs. DevAssistant boasts many features like:
-\begin{itemize}
-  \item both a GUI and command line interface
-  \item support for C, C++, Java, Perl, PHP, Python, Ruby on Rails and more.
-  \item dependency installer
-  \item integration with GitHub
-  \item \ldots and more
-\end{itemize}
+Thanks both to work done in GNOME 3.16 and other projects like the Automatic Bug Reporting Tool (ABRT), notifications keep you better informed, but interfere less with your work. They now appear anchored to the center of the top bar, and no longer cover up the bottom of the screen where you are often reading a terminal or browser. An unobtrusive marker appears in the calendar to let you know you have unread notifications. If ABRT detects a serious bug, a friendly notification appears and allows you to report the bug information, but doesn't overload you with details. And if you're a serious Terminal user, longer background jobs now notify you when they're done, so you can get on with other work and pick up the results when you're ready. 
 
-
-\section{\textcolor{FedoraBlue}{Ease of installation}}
+\section{\textcolor{FedoraBlue}{Nautilus improvements}}
 \begin{figure}[h]
-  \includegraphics[keepaspectratio,width=\textwidth]{Workstation-anaconda-0-cropped.png}
+  \includegraphics[keepaspectratio,width=\textwidth]{nautilus-f22-cropped.png}
 \end{figure}
-We want the installation of the Fedora Workstation to be as straightforward and simple as possible. In Fedora Workstation we've distilled this process down to selecting the layout of your physical media, and then pressing ``Install.'' (In fact, you can even let the installer choose the disk layout for you.) The install media is built to be easily used with either optical media or USB sticks - We even ship an easy to use tool that will let you quickly create bootable USB sticks -- just download a new Live image, right-click, and write to USB.
+The updated layout in Files gives a better view of your files and folders, and a new view popover makes it easy to change the zoom level and sort order from a single place. You can also now move files and folders to the trash intuitively using the Delete key, rather than the Ctrl+Delete keyboard combination. 
 
-\section{\textcolor{FedoraBlue}{Web service integration}}
-We recognize you have work to do, and you want to use the tools that let you get it done. That's why we're working to make all your applications in Fedora Workstation look and feel the same. With the ability to run HTML5 web services in a chromeless window - Epiphany based web applications - we aim to make your apps feel like a natural extension to your desktop. More integration upgrades are coming in future Fedora Workstation releases.
-
-\section{\textcolor{FedoraBlue}{Support for high resolution displays (HiDPI)}}
-Technology never stands still, and as a software developer you are used to using the best technology available. So we've spent a lot of time and effort on supporting the new generation of HiDPI displays found on new hardware like many new ultrabook models, or the Apple Retina display.
-
-\section{\textcolor{FedoraBlue}{Exciting roadmap}}
-This Fedora Workstation release is not the end. It's the beginning of a new era for Fedora on the desktop. We have a roadmap lined up to bring a range of exciting new technologies to the Linux desktop:
+\section{\textcolor{FedoraBlue}{Other improvements}}
+Of course, that's not all. Other applications have seen improvements too:
 \begin{itemize}
-  \item Containers
-  \item Smarter virtual machines
-  \item Better development tools
-  \item Improved toolkit integration
-  \item More web integration
+  \item The user interface for \textbf{Boxes}, the application for virtual and remote machines, has a large number of improvements, including new preferences dialogs, a revamped box creation assistant, a feature to send keyboard shortcuts to a box, and display scaling by default.
+  \item Developers will appreciate the addition of software development environment software \textbf{Vagrant} into Fedora -- it'll work using our included virtualization technology, with no need to install third-party virtualization (like VirtualBox). Use this to work on top of the Cloud images mentioned above, or launch your own Vagrant boxes.
+  \item The \textbf{Image Viewer} has been redesigned to reduce the amount of window chrome and give more space to images. 
+  \item Faster and better dependency management with \textbf{DNF}.
+  \item \textbf{Elasticsearch} is full-featured and very popular self-standing open source indexing server, and now it's available by with just a ``yum install elasticsearch'' -- no, wait, make that ``dnf install elasticsearch''! 
+  \item Fedora 22 comes with \textbf{GNU Compiler Collection 5.1} as the primary compiler suite.
   \item \ldots and much more
 \end{itemize}
 
-So if you want to be part of the future of the Linux desktop, get on board now!
+\section{\textcolor{FedoraBlue}{Exciting roadmap}}
+The community continues to work towards making Fedora a better \href{http://www.gnu.org/philosophy/free-sw.en.html}{free} operating system for our users.  So if you want to be part of the future of the Linux desktop, get on board now!
 
-More information on the roadmap can be found here:\\ \href{http://fedoraproject.org/wiki/Releases/22/ChangeSet}{http://fedoraproject.org/wiki/Releases/22/ChangeSet}
+Information on the complete roadmap can be found here:\\ \href{http://fedoraproject.org/wiki/Releases/22/ChangeSet}{http://fedoraproject.org/wiki/Releases/22/ChangeSet}
+
+\vspace{1.5cm}
+\begin{figure}[h]
+  \includegraphics[keepaspectratio,width=\textwidth]{Fedora-workstation-v5a-infinity.png}
+\end{figure}
 \newpage
 
 \begin{center}
